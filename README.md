@@ -1,15 +1,15 @@
 # maftools-in-R
-maftools is a bioinformatic package use to annotate mutations and find variants. Full documentation can be found online. 
+__maftools__ is a bioinformatic package use to annotate mutations and find variants. Full documentation can be found online. 
 
 https://bioconductor.org/packages/release/bioc/vignettes/maftools/inst/doc/maftools.html
 
-##FILE INPUTS
+### __FILE INPUTS__
 
 - (required) MAF file - can be gz compressed.
 - (optional) clinical data associated with each sample/Tumor_Sample_Barcode in MAF.
 - (optional) copy number data if available. Can be GISTIC output or a custom table containing sample names, gene names and copy-number status (Amp or Del).
 
-##FILE OUTPUTS
+### __FILE OUTPUTS__
 
 - Gene Summary (txt)
 - Sample Summary (txt)
@@ -19,22 +19,21 @@ https://bioconductor.org/packages/release/bioc/vignettes/maftools/inst/doc/mafto
 - Summary plots (png)
 
 
-##PACKAGE REQUIREMENTS
+### __PACKAGE REQUIREMENTS__
 
---Install required libraries from Bioconductor
-Run this code if the packages are not already installed
+Install required libraries from Bioconductor
 
-'''
-if (!require("BiocManager"))
-  install.packages("BiocManager")
-BiocManager::install("maftools")
-install.packages("R.utils")
-'''
+*Run this code if the packages are not already installed*
 
-##Load required libraries
+    if (!require("BiocManager"))
+      install.packages("BiocManager")
+    BiocManager::install("maftools")
+    
+    install.packages("R.utils")
 
-'''
-library("maftools")
-library("RColorBrewer")
-library("R.utils")
-'''
+### __Load required libraries__
+
+    library("maftools")
+    library("RColorBrewer")
+    library("R.utils")
+
